@@ -39,31 +39,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route 
-            path="/productos/ropa" 
-            element={
-              <ItemListContainer 
-                products={products.filter(product => product.category === 'ropa')} 
-                texto="Productos de Ropa" 
-              />
-            } 
-          />
-          <Route 
-            path="/productos/accesorios" 
-            element={
-              <ItemListContainer 
-                products={products.filter(product => product.category === 'accesorios')} 
-                texto="Productos de Accesorios" 
-              />
-            } 
-          />
-          <Route 
-            path="/productos/electrónica" 
-            element={
-              <ItemListContainer 
-                products={products.filter(product => product.category === 'electronica')} 
-                texto="Productos de Electrónica" 
-              />
-            } 
+            path="/productos/:categoryId"  // Cambia la ruta para que use un parámetro
+            element={<ItemListContainer products={products} />} 
           />
           <Route path="/detail/:id" element={<ItemDetailContainer products={products} />} />
           <Route path="*" element={<NotFound />} />

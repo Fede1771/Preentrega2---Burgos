@@ -1,8 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import CartWidget from './CartWidget';
 
 const Navbar = () => {
+  // Eliminar "Calzado" de las categorías
   const categorias = ["Ropa", "Accesorios", "Electrónica"];
 
   return (
@@ -14,11 +14,11 @@ const Navbar = () => {
 
       <ul className="categories">
         <li>
-          <Link to="/">Inicio</Link> {/* Enlace para volver al inicio */}
+          <a href="/">Inicio</a>
         </li>
         {categorias.map((categoria, index) => (
           <li key={index}>
-            <Link to={`/productos/${categoria.toLowerCase()}`}>{categoria}</Link>
+            <a href={`/productos/${categoria.toLowerCase()}`}>{categoria}</a>
           </li>
         ))}
       </ul>
