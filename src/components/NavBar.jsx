@@ -12,6 +12,9 @@ const Navbar = () => {
       </div>
 
       <ul className="categories">
+        <li>
+          <a href="/">Inicio</a> {/* Enlace para volver al inicio */}
+        </li>
         {categorias.map((categoria, index) => (
           <li key={index}>
             <a href={`/productos/${categoria.toLowerCase()}`}>{categoria}</a>
