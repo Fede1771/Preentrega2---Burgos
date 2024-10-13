@@ -4,7 +4,7 @@
         "title": "Mochila Fjallraven - Foldsack No. 1, cabe laptops de 15 pulgadas",
         "price": 109.95,
         "description": "Tu mochila perfecta para el uso diario y paseos por el bosque. Guarda tu laptop (hasta 15 pulgadas) en el compartimento acolchado.",
-        "category": "ropa masculina",
+        "category": "ropa",
         "pictureUrl": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
         "rating": {
             "rate": 3.9,
@@ -16,7 +16,7 @@
         "title": "Camisetas de manga corta para hombres",
         "price": 22.3,
         "description": "Estilo ajustado, manga larga de contraste, tapeta con tres botones, tela ligera y suave para una experiencia de uso cómoda y transpirable.",
-        "category": "ropa masculina",
+        "category": "ropa",
         "pictureUrl": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
         "rating": {
             "rate": 4.1,
@@ -28,7 +28,7 @@
         "title": "Chaqueta de algodón para hombres",
         "price": 55.99,
         "description": "Grandes chaquetas exteriores para primavera, otoño e invierno, adecuadas para muchas ocasiones.",
-        "category": "ropa masculina",
+        "category": "ropa",
         "pictureUrl": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
         "rating": {
             "rate": 4.7,
@@ -40,7 +40,7 @@
         "title": "Pantalones casuales ajustados para hombres",
         "price": 15.99,
         "description": "El color puede ser ligeramente diferente entre la pantalla y en la práctica.",
-        "category": "ropa masculina",
+        "category": "ropa",
         "pictureUrl": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
         "rating": {
             "rate": 2.1,

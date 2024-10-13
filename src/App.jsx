@@ -1,34 +1,53 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/NavBar';
 import ItemListContainer from './components/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer';
-import Home from './components/Home'; // Importa tu componente Home
+import Home from './components/Home';
 import NotFound from './components/NotFound';
-import Footer from './components/Footer'; // Importa tu componente Footer
+import Footer from './components/Footer';
 import './App.css';
 
-// Componente Layout que incluye el Navbar y el Footer
 const Layout = ({ children }) => {
   return (
     <div className="App">
       <header className="App-header">
         <Navbar />
-        {children} {/* Renderiza los componentes hijos aquí */}
+        {children}
       </header>
-      <Footer /> {/* Añade el Footer aquí para que aparezca en todas las páginas */}
+      <Footer />
     </div>
   );
 };
 
 function App() {
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    const fetchProducts = async () => {
+      const response = await fetch('https://fakestoreapi.com/products');
+      const data = await response.json();
+      setProducts(data);
+    };
+
+    fetchProducts();
+  }, []);
+
   return (
     <BrowserRouter>
       <Layout>
         <Routes>
-          <Route path="/" element={<Home />} /> {/* Agrega la ruta para el componente Home */}
-          <Route path="/category/:categoryId" element={<ItemListContainer />} />
-          <Route path="/detail/:id" element={<ItemDetailContainer />} />
+          <Route path="/" element={<Home />} />
+          <Route 
+            path="/productos/ropa" 
+            element={
+              <ItemListContainer 
+                products={products.filter(product => product.category === 'ropa')} 
+                texto="Productos de Ropa" 
+              />
+            } 
+          />
+          <Route path="/detail/:id" element={<ItemDetailContainer products={products} />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>
