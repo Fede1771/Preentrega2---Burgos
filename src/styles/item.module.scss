@@ -1,20 +1,53 @@
 .container {
     width: 300px;
     height: 450px;
-    box-shadow: rgba(179, 179, 214, 0.25) 0px 6px 12px -2px,
-        rgba(224, 215, 215, 0.3) 0px 3px 7px -3px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 20px; /* Sombra más suave */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     gap: 10px;
-    border: white 2px solid;
+    border: 2px solid #eaeaea; /* Color de borde más suave */
     border-radius: 15px;
-    padding: 10px;
+    padding: 15px;
     text-align: center;
+    background-color: #ffffff; /* Fondo blanco para mejorar la legibilidad */
+    transition: transform 0.2s; /* Efecto de transición al pasar el mouse */
+    
+    &:hover {
+        transform: scale(1.05); /* Escalado al pasar el mouse */
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 16px; /* Sombra más intensa al pasar el mouse */
+    }
+    
     img {
         width: 100%;
         height: 250px;
         object-fit: cover;
+        border-radius: 10px; /* Bordes redondeados para la imagen */
+    }
+}
+
+h2 {
+    font-size: 1.2em;
+    margin: 0;
+    color: #333; /* Color del texto del título */
+}
+
+span {
+    font-size: 0.9em;
+    color: #666; /* Color del texto de la descripción y precio */
+}
+
+button {
+    background-color: #007bff; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+    &:hover {
+        background-color: #0056b3; /* Color del botón al pasar el mouse */
     }
 }
