@@ -6,7 +6,7 @@ import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg
 const Footer = () => {
   return (
     <footer className={styles.container}> {/* Asegúrate de que aquí se aplica la clase container */}
-      <span>Simona</span>
+      <p>Simona</p>
       <div className={styles.socialMedia}>
         <a href="https://www.facebook.com" rel='noopener noreferrer' target='_blank'>
           <FontAwesomeIcon icon={faFacebook} />

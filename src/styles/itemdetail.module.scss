@@ -1,0 +1,38 @@
+.card {
+    display: flex;
+    flex-direction: column; /* Organizar los elementos en una columna */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff; /* Fondo blanco para la tarjeta */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle efecto de tarjeta */
+    max-width: 350px; /* Ancho máximo de la tarjeta */
+    margin: 20px auto; /* Centramos la tarjeta */
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%; /* Imagen adaptativa */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-bottom: 15px; /* Espacio entre imagen y texto */
+}
+
+.card h1 {
+    font-size: 1.5em;
+    margin: 5px 0; /* Menor espacio entre el título y el span */
+    color: #333;
+}
+
+.card .description {
+    font-size: 1em; 
+    color: #55769c; /* Un color más vivo para el span */
+    margin: 5px 0;
+    font-weight: bold; /* Darle peso al texto */
+}
+
+.card .additionalInfo {
+    font-size: 0.9em;
+    color: #7e7c7c; /* Un color más apagado para la información adicional */
+    margin-top: 10px; /* Espacio superior entre el span y otros elementos */
+}
