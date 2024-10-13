@@ -6,12 +6,12 @@ import { useParams } from "react-router-dom";
 const ItemListContainer = () => {
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(false);
-    const { categoryId } = useParams();
+    const { categoryId } = useParams(); // Esto recupera la categoría de la URL
 
     useEffect(() => {
         const promise1 = new Promise((res) => {
             setTimeout(() => {
-                res(mockProducts);
+                res(mockProducts); // Aquí debes usar la fuente de datos correcta
             }, 2000);
         });
 
@@ -21,6 +21,7 @@ const ItemListContainer = () => {
             let productsFiltered;
 
             if (categoryId) {
+                // Filtro los productos por categoría (categoryId viene de la URL)
                 productsFiltered = products.filter(
                     (product) => product.category === categoryId
                 );
@@ -35,17 +36,7 @@ const ItemListContainer = () => {
         getProducts();
     }, [categoryId]);
 
-    useEffect(() => {
-        console.log("Este side effect se ejecuta en el montaje del componente");
-
-        return () => {
-            console.log("Aca se va a desmontar el componente!");
-        };
-    }, []);
-
-    console.log(products);
-
-    return loading ? <h1>Espere</h1> : <ItemList products={products} />;
+    return loading ? <h1>Espere...</h1> : <ItemList products={products} />;
 };
 
 export default ItemListContainer;

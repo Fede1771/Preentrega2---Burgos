@@ -52,7 +52,7 @@
         "title": "Pulsera de cadena de dragón de oro y plata de John Hardy",
         "price": 695,
         "description": "De nuestra colección Legends, el Naga fue inspirado por el dragón de agua mítico que protege la perla del océano.",
-        "category": "joyería",
+        "category": "accesorios",
         "pictureUrl": "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
         "rating": {
             "rate": 4.6,
@@ -64,7 +64,7 @@
         "title": "Micropave de oro sólido para mujeres",
         "price": 168,
         "description": "Satisfacción garantizada. Devuelve o cambia cualquier pedido dentro de los 30 días.",
-        "category": "joyería",
+        "category": "accesorios",
         "pictureUrl": "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg",
         "rating": {
             "rate": 3.9,
@@ -76,7 +76,7 @@
         "title": "Anillo de promesa de diamante de solitario creado, chapado en oro blanco",
         "price": 9.99,
         "description": "Anillo de compromiso clásico creado para ella.",
-        "category": "joyería",
+        "category": "accesorios",
         "pictureUrl": "https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg",
         "rating": {
             "rate": 3,
@@ -88,7 +88,7 @@
         "title": "Pendientes de doble túnel de acero inoxidable chapados en oro rosa",
         "price": 10.99,
         "description": "Pendientes de doble túnel chapados en oro rosa. Hechos de acero inoxidable 316L.",
-        "category": "joyería",
+        "category": "accesorios",
         "pictureUrl": "https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg",
         "rating": {
             "rate": 1.9,
@@ -100,7 +100,7 @@
         "title": "WD 2TB Elements Disco Duro Externo Portátil - USB 3.0",
         "price": 64,
         "description": "Compatibilidad con USB 3.0 y USB 2.0. Transferencias de datos rápidas. Mejora el rendimiento de la PC.",
-        "category": "electrónica",
+        "category": "electronica",
         "pictureUrl": "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
         "rating": {
             "rate": 3.3,
@@ -112,7 +112,7 @@
         "title": "SanDisk SSD PLUS 1TB SSD Interno - SATA III 6 Gb/s",
         "price": 109,
         "description": "Actualización fácil para un arranque más rápido, cierre, carga de aplicaciones y respuesta.",
-        "category": "electrónica",
+        "category": "electronica",
         "pictureUrl": "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg",
         "rating": {
             "rate": 2.9,
@@ -124,7 +124,7 @@
         "title": "Silicon Power 256GB SSD 3D NAND A55 con caché SLC, aumento de rendimiento SATA III 2.5",
         "price": 109,
         "description": "Se aplican flash 3D NAND para ofrecer altas velocidades de transferencia.",
-        "category": "electrónica",
+        "category": "electronica",
         "pictureUrl": "https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_.jpg",
         "rating": {
             "rate": 4.8,
@@ -136,7 +136,7 @@
         "title": "WD 4TB Disco Duro para Juegos, Funciona con Playstation 4, Disco Duro Externo Portátil",
         "price": 114,
         "description": "Amplía tu experiencia de juego en PS4, juega en cualquier lugar.",
-        "category": "electrónica",
+        "category": "electronica",
         "pictureUrl": "https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg",
         "rating": {
             "rate": 4.8,

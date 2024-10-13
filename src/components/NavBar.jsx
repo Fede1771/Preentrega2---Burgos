@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import CartWidget from './CartWidget';
 
 const Navbar = () => {
-  const categorias = ["Ropa", "Calzado", "Accesorios", "Electrónica"];
+  const categorias = ["Ropa", "Accesorios", "Electrónica"];
 
   return (
     <nav>
@@ -13,11 +14,11 @@ const Navbar = () => {
 
       <ul className="categories">
         <li>
-          <a href="/">Inicio</a> {/* Enlace para volver al inicio */}
+          <Link to="/">Inicio</Link> {/* Enlace para volver al inicio */}
         </li>
         {categorias.map((categoria, index) => (
           <li key={index}>
-            <a href={`/productos/${categoria.toLowerCase()}`}>{categoria}</a>
+            <Link to={`/productos/${categoria.toLowerCase()}`}>{categoria}</Link>
           </li>
         ))}
       </ul>

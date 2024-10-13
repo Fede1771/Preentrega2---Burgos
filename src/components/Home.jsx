@@ -1,5 +1,5 @@
 import React from 'react';
-import image from '../images/tienda.png'; // Cambia 'tu-imagen.jpg' por el nombre de tu imagen
+import image from '../images/tienda.png'; 
 
 const Home = () => {
   return (

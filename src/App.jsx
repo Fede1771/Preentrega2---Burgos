@@ -47,6 +47,24 @@ function App() {
               />
             } 
           />
+          <Route 
+            path="/productos/accesorios" 
+            element={
+              <ItemListContainer 
+                products={products.filter(product => product.category === 'accesorios')} 
+                texto="Productos de Accesorios" 
+              />
+            } 
+          />
+          <Route 
+            path="/productos/electrónica" 
+            element={
+              <ItemListContainer 
+                products={products.filter(product => product.category === 'electronica')} 
+                texto="Productos de Electrónica" 
+              />
+            } 
+          />
           <Route path="/detail/:id" element={<ItemDetailContainer products={products} />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
