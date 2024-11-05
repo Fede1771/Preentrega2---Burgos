@@ -17,15 +17,14 @@ const ItemListContainer = () => {
     };
 
     useEffect(() => {
-        const promise1 = new Promise((res) => {
-            setTimeout(() => {
-                res(mockProducts);
-            }, 2000);
-        });
-
         const getProducts = async () => {
             setLoading(true);
-            const products = await promise1;
+            // Simulamos una llamada a una API con una promesa
+            const products = await new Promise((res) => {
+                setTimeout(() => {
+                    res(mockProducts);
+                }, 2000);
+            });
             let productsFiltered;
 
             // Filtrar productos según la categoría normalizada

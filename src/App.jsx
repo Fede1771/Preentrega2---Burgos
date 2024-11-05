@@ -1,10 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { UserProvider } from './contexts/UserContext';
+import { CartProvider } from './contexts/CartContext';
 import Navbar from './components/NavBar';
 import ItemListContainer from './components/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer';
 import Home from './components/Home';
 import NotFound from './components/NotFound';
+import Login from './components/Login';
+import Cart from './components/Cart';
 import Footer from './components/Footer';
 import './App.css';
 
@@ -34,19 +38,25 @@ function App() {
   }, []);
 
   return (
-    <BrowserRouter>
-      <Layout>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route 
-            path="/productos/:categoryId"  // Cambia la ruta para que use un parámetro
-            element={<ItemListContainer products={products} />} 
-          />
-          <Route path="/detail/:id" element={<ItemDetailContainer products={products} />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </Layout>
-    </BrowserRouter>
+    <UserProvider>
+      <CartProvider>
+        <BrowserRouter>
+          <Layout>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/cart" element={<Cart />} />
+              <Route 
+                path="/productos/:categoryId"  
+                element={<ItemListContainer products={products} />} 
+              />
+              <Route path="/detail/:id" element={<ItemDetailContainer products={products} />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </Layout>
+        </BrowserRouter>
+      </CartProvider>
+    </UserProvider>
   );
 }
 
