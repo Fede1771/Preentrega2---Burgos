@@ -1,5 +1,5 @@
 import React from "react";
-import styles from '../styles/ItemDetail.module.scss'; // Asegúrate de que la ruta sea correcta
+import styles from '../styles/itemdetail.module.scss'; // Asegúrate de que la ruta sea correcta
 
 const ItemDetail = ({ product }) => {
     return (
